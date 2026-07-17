@@ -1,0 +1,72 @@
+                                    USER
+                                      │
+                                      ▼
+                         ┌────────────────────────┐
+                         │    React Frontend      │
+                         │ (User Interface - UI)  │
+                         └────────────────────────┘
+                                      │
+                         HTTP/HTTPS API Requests
+                                      │
+                                      ▼
+               ┌─────────────────────────────────────────┐
+               │      ASP.NET Core Web API (.NET 8)      │
+               └─────────────────────────────────────────┘
+                                      │
+                     Receives and Routes API Requests
+                                      │
+                                      ▼
+        ┌──────────────────────────────────────────────────────┐
+        │                   Controllers                        │
+        ├──────────────────────────────────────────────────────┤
+        │ AuthController                                       │
+        │ BlogController                                       │
+        │ ProfileController                                    │
+        │ PaymentController                                    │
+        │ FeedbackController                                   │
+        │ AdminController                                      │
+        └──────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+        ┌──────────────────────────────────────────────────────┐
+        │                     Services                         │
+        ├──────────────────────────────────────────────────────┤
+        │ Authentication Service                              │
+        │ Blog Service                                        │
+        │ AI Service                                          │
+        │ Credit Service                                      │
+        │ Payment Service                                     │
+        │ Profile Service                                     │
+        │ Feedback Service                                    │
+        │ Admin Service                                       │
+        └──────────────────────────────────────────────────────┘
+                                      │
+                   Performs Business Logic & Validations
+                                      │
+                                      ▼
+        ┌──────────────────────────────────────────────────────┐
+        │                 Repository Layer                     │
+        ├──────────────────────────────────────────────────────┤
+        │ User Repository                                     │
+        │ Blog Repository                                     │
+        │ Payment Repository                                 │
+        │ Feedback Repository                                │
+        │ Issue Repository                                   │
+        └──────────────────────────────────────────────────────┘
+                                      │
+                      Uses Entity Framework Core
+                                      │
+                                      ▼
+                         ┌────────────────────────┐
+                         │     SQL Server DB      │
+                         └────────────────────────┘
+                                      ▲
+                                      │
+         ┌───────────────┬────────────┴────────────┬───────────────┐
+         │               │                         │               │
+         ▼               ▼                         ▼               ▼
+ ┌──────────────┐ ┌──────────────┐       ┌────────────────┐ ┌──────────────┐
+ │ OpenAI API   │ │ Stripe API   │       │ File Storage   │ │ JWT Service  │
+ │ Blog Gen     │ │ Payments     │       │ Profile Images │ │ JWT & Refresh│
+ │ AI Images    │ │ Credit Plans │       │                │ │ Tokens       │
+ └──────────────┘ └──────────────┘       └────────────────┘ └──────────────┘

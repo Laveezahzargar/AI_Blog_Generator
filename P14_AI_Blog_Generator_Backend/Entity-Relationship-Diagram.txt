@@ -1,0 +1,159 @@
+                                   +-------------------------+
+                                   |         Users           |
+                                   +-------------------------+
+                                   | UserId (PK)             |
+                                   | FirstName               |
+                                   | LastName                |
+                                   | Email                   |
+                                   | PasswordHash            |
+                                   | PhoneNumber             |
+                                   | Role                    |
+                                   | ProfilePictureUrl       |
+                                   | AvailableCredits        |
+                                   | IsDeleted               |
+                                   | CreatedAt               |
+                                   +-------------------------+
+                                              │
+                                              │1
+                                              │
+                                              │*
+                                   +-------------------------+
+                                   |     RefreshTokens       |
+                                   +-------------------------+
+                                   | TokenId (PK)            |
+                                   | UserId (FK)             |
+                                   | Token                   |
+                                   | ExpiryDate              |
+                                   | IsRevoked               |
+                                   +-------------------------+
+
+Users (1)
+   │
+   │
+   │*
++-------------------------+
+|         Blogs           |
++-------------------------+
+| BlogId (PK)             |
+| UserId (FK)             |
+| Title                   |
+| Prompt                  |
+| Content                 |
+| WordCount               |
+| Language                |
+| CreatedAt               |
+| UpdatedAt               |
++-------------------------+
+            │
+            │1
+            │
+            │*
++-------------------------+
+|      BlogVersions       |
++-------------------------+
+| VersionId (PK)          |
+| BlogId (FK)             |
+| VersionType             |
+| Content                 |
+| CreatedAt               |
++-------------------------+
+
+Blogs (1)
+   │
+   │
+   │*
++-------------------------+
+|      BlogImages         |
++-------------------------+
+| ImageId (PK)            |
+| BlogId (FK)             |
+| ImageUrl                |
+| Prompt                  |
+| CreatedAt               |
++-------------------------+
+
+Users (1)
+   │
+   │
+   │*
++-------------------------+
+|  CreditTransactions     |
++-------------------------+
+| TransactionId (PK)      |
+| UserId (FK)             |
+| Credits                 |
+| TransactionType         |
+| Description             |
+| CreatedAt               |
++-------------------------+
+
++-------------------------+
+|         Plans           |
++-------------------------+
+| PlanId (PK)             |
+| Name                    |
+| Price                   |
+| Credits                 |
+| Description             |
++-------------------------+
+            │
+            │1
+            │
+            │*
++-------------------------+
+|       Payments          |
++-------------------------+
+| PaymentId (PK)          |
+| UserId (FK)             |
+| PlanId (FK)             |
+| Amount                  |
+| CreditsPurchased        |
+| StripePaymentIntentId   |
+| PaymentStatus           |
+| PurchasedAt             |
++-------------------------+
+
+Users (1)
+   │
+   │
+   │*
++-------------------------+
+|      Feedbacks          |
++-------------------------+
+| FeedbackId (PK)         |
+| UserId (FK)             |
+| Subject                 |
+| Message                 |
+| Status                  |
+| CreatedAt               |
++-------------------------+
+
+Users (1)
+   │
+   │
+   │*
++-------------------------+
+|        Issues           |
++-------------------------+
+| IssueId (PK)            |
+| UserId (FK)             |
+| Subject                 |
+| Description             |
+| Status                  |
+| ResolvedByAdmin         |
+| CreatedAt               |
++-------------------------+
+
+Users (1)
+   │
+   │
+   │0..1
++-------------------------+
+|    DeletedAccounts      |
++-------------------------+
+| DeletedId (PK)          |
+| UserId (FK)             |
+| Email                   |
+| Reason                  |
+| DeletedAt               |
++-------------------------+

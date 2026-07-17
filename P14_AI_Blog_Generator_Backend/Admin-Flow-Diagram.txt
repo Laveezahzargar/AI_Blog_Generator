@@ -1,0 +1,36 @@
+                     START
+                       │
+                       ▼
+                 Admin Login
+                       │
+                       ▼
+            JWT Authentication
+                       │
+                       ▼
+               Admin Dashboard
+                       │
+      ┌────────────────┼──────────────────┐
+      │                │                  │
+      ▼                ▼                  ▼
+ View Users      View All Blogs      View Payments
+      │                │                  │
+      ▼                ▼                  ▼
+User Details     Blog Details      Subscription Plans
+      │                │
+      ▼                ▼
+Deleted Users    Delete Any Blog
+      │
+      ▼
+View Deletion Reasons
+      │
+      ▼
+View Feedback & Issues
+      │
+      ▼
+Resolve Feedback/Issues
+      │
+      ▼
+      Logout
+      │
+      ▼
+      END

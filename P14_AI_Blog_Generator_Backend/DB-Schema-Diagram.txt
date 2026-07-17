@@ -1,0 +1,116 @@
+1. Users
+Column	Data Type	Constraints
+UserId	int	PK, Identity
+FirstName	nvarchar(100)	Not Null
+LastName	nvarchar(100)	Not Null
+Email	nvarchar(255)	Unique, Not Null
+PasswordHash	nvarchar(max)	Not Null
+PhoneNumber	nvarchar(20)	Nullable
+Role	int (Enum)	Not Null
+ProfilePictureUrl	nvarchar(max)	Nullable
+AvailableCredits	int	Default 100
+IsDeleted	bit	Default False
+CreatedAt	datetime	Not Null
+UpdatedAt	datetime	Nullable
+2. RefreshTokens
+Column	Data Type	Constraints
+RefreshTokenId	int	PK
+UserId	int	FK → Users
+Token	nvarchar(max)	Not Null
+ExpiryDate	datetime	Not Null
+IsRevoked	bit	Default False
+CreatedAt	datetime	Not Null
+3. Blogs
+Column	Data Type	Constraints
+BlogId	int	PK
+UserId	int	FK → Users
+Title	nvarchar(255)	Nullable
+Prompt	nvarchar(max)	Not Null
+Content	nvarchar(max)	Not Null
+WordCount	int	Not Null
+Language	nvarchar(50)	Nullable
+CreatedAt	datetime	Not Null
+UpdatedAt	datetime	Nullable
+4. BlogVersions
+Column	Data Type	Constraints
+VersionId	int	PK
+BlogId	int	FK → Blogs
+VersionType	nvarchar(50)	(Original, Regenerated, Expanded, Shortened)
+Content	nvarchar(max)	Not Null
+CreatedAt	datetime	Not Null
+5. BlogImages
+Column	Data Type	Constraints
+ImageId	int	PK
+BlogId	int	FK → Blogs
+ImageUrl	nvarchar(max)	Not Null
+Prompt	nvarchar(max)	Nullable
+CreatedAt	datetime	Not Null
+6. CreditTransactions
+Column	Data Type	Constraints
+TransactionId	int	PK
+UserId	int	FK → Users
+Credits	int	Not Null
+TransactionType	nvarchar(50)	Credit / Debit
+Description	nvarchar(255)	Nullable
+CreatedAt	datetime	Not Null
+7. Plans
+Column	Data Type	Constraints
+PlanId	int	PK
+Name	nvarchar(100)	Not Null
+Price	decimal(10,2)	Not Null
+Credits	int	Not Null
+Description	nvarchar(255)	Nullable
+8. Payments
+Column	Data Type	Constraints
+PaymentId	int	PK
+UserId	int	FK → Users
+PlanId	int	FK → Plans
+Amount	decimal(10,2)	Not Null
+CreditsPurchased	int	Not Null
+StripePaymentIntentId	nvarchar(255)	Nullable
+PaymentStatus	nvarchar(50)	Not Null
+PurchasedAt	datetime	Not Null
+9. Feedbacks
+Column	Data Type	Constraints
+FeedbackId	int	PK
+UserId	int	FK → Users
+Subject	nvarchar(255)	Not Null
+Message	nvarchar(max)	Not Null
+Status	nvarchar(50)	Default "Pending"
+CreatedAt	datetime	Not Null
+10. Issues
+Column	Data Type	Constraints
+IssueId	int	PK
+UserId	int	FK → Users
+Subject	nvarchar(255)	Not Null
+Description	nvarchar(max)	Not Null
+Status	nvarchar(50)	Default "Pending"
+ResolvedByAdmin	bit	Default False
+CreatedAt	datetime	Not Null
+11. DeletedAccounts
+Column	Data Type	Constraints
+DeletedAccountId	int	PK
+UserId	int	FK → Users
+Email	nvarchar(255)	Not Null
+Reason	nvarchar(max)	Nullable
+DeletedAt	datetime	Not Null
+
+
+
+
+
+
+
+
+Users (1) ─────── (*) Blogs
+Users (1) ─────── (*) RefreshTokens
+Users (1) ─────── (*) Payments
+Users (1) ─────── (*) CreditTransactions
+Users (1) ─────── (*) Feedbacks
+Users (1) ─────── (*) Issues
+Users (1) ─────── (0..1) DeletedAccounts
+
+Blogs (1) ─────── (*) BlogVersions
+Blogs (1) ─────── (*) BlogImages
+
+Plans (1) ─────── (*) Payments
