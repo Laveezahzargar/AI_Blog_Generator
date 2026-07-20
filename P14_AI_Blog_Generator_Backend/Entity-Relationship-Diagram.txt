@@ -1,159 +1,258 @@
-                                   +-------------------------+
-                                   |         Users           |
-                                   +-------------------------+
-                                   | UserId (PK)             |
-                                   | FirstName               |
-                                   | LastName                |
-                                   | Email                   |
-                                   | PasswordHash            |
-                                   | PhoneNumber             |
-                                   | Role                    |
-                                   | ProfilePictureUrl       |
-                                   | AvailableCredits        |
-                                   | IsDeleted               |
-                                   | CreatedAt               |
-                                   +-------------------------+
-                                              │
-                                              │1
-                                              │
-                                              │*
-                                   +-------------------------+
-                                   |     RefreshTokens       |
-                                   +-------------------------+
-                                   | TokenId (PK)            |
-                                   | UserId (FK)             |
-                                   | Token                   |
-                                   | ExpiryDate              |
-                                   | IsRevoked               |
-                                   +-------------------------+
++------------------------------+
+|            Users             |
++------------------------------+
+ | UserId (PK)                 |
+ | UserName                    |
+ | Email                       |
+ | PasswordHash                |
+ | Role                        |
+ | ProfilePictureUrl           |
+ | AvailableCredits            |
+ | IsDeleted                   |
+ | CreatedAt                   |
+ | UpdatedAt                   |
++------------------------------+
+                │
+                │1
+                │
+                │*
++------------------------------+
+|       RefreshTokens          |
++------------------------------+
+ | TokenId (PK)                |
+ | UserId (FK)                 |
+ | Token                       |
+ | ExpiryDate                  |
+ | IsRevoked                   |
+ | CreatedAt                   |
++------------------------------+
+
 
 Users (1)
    │
    │
    │*
-+-------------------------+
-|         Blogs           |
-+-------------------------+
-| BlogId (PK)             |
-| UserId (FK)             |
-| Title                   |
-| Prompt                  |
-| Content                 |
-| WordCount               |
-| Language                |
-| CreatedAt               |
-| UpdatedAt               |
-+-------------------------+
-            │
-            │1
-            │
-            │*
-+-------------------------+
-|      BlogVersions       |
-+-------------------------+
-| VersionId (PK)          |
-| BlogId (FK)             |
-| VersionType             |
-| Content                 |
-| CreatedAt               |
-+-------------------------+
++------------------------------+
+|            Blogs             |
++------------------------------+
+| BlogId (PK)                 |
+| UserId (FK)                 |
+| Title                       |
+| Prompt                      |
+| Content                     |
+| Tone                        |
+| Audience                    |
+| Language                    |
+| Keywords                    |
+| WordCount                   |
+| CreditsUsed                 |
+| CreatedAt                   |
+| UpdatedAt                   |
++------------------------------+
+              │
+              │1
+              │
+              │*
++------------------------------+
+|        BlogVersions          |
++------------------------------+
+| VersionId (PK)              |
+| BlogId (FK)                 |
+| Title		              |
+| VersionType                 |
+| Content                     |
+| WordCount                   |
+| CreatedAt                   |
++------------------------------+
+
 
 Blogs (1)
    │
    │
    │*
-+-------------------------+
-|      BlogImages         |
-+-------------------------+
-| ImageId (PK)            |
-| BlogId (FK)             |
-| ImageUrl                |
-| Prompt                  |
-| CreatedAt               |
-+-------------------------+
++------------------------------+
+|         BlogImages           |
++------------------------------+
+| ImageId (PK)                |
+| BlogId (FK)                 |
+| Prompt                      |
+| ImageUrl                    |
+| CreditsUsed                 |
+| CreatedAt                   |
++------------------------------+
+
 
 Users (1)
    │
    │
    │*
-+-------------------------+
-|  CreditTransactions     |
-+-------------------------+
-| TransactionId (PK)      |
-| UserId (FK)             |
-| Credits                 |
-| TransactionType         |
-| Description             |
-| CreatedAt               |
-+-------------------------+
++------------------------------+
+|    CreditTransactions        |
++------------------------------+
+| TransactionId (PK)          |
+| UserId (FK)                 |
+| CreditAmount                |
+| TransactionType             |
+| Description                 |
+| CreatedAt                   |
++------------------------------+
 
-+-------------------------+
-|         Plans           |
-+-------------------------+
-| PlanId (PK)             |
-| Name                    |
-| Price                   |
-| Credits                 |
-| Description             |
-+-------------------------+
-            │
-            │1
-            │
-            │*
-+-------------------------+
-|       Payments          |
-+-------------------------+
-| PaymentId (PK)          |
-| UserId (FK)             |
-| PlanId (FK)             |
-| Amount                  |
-| CreditsPurchased        |
-| StripePaymentIntentId   |
-| PaymentStatus           |
-| PurchasedAt             |
-+-------------------------+
 
-Users (1)
-   │
-   │
-   │*
-+-------------------------+
-|      Feedbacks          |
-+-------------------------+
-| FeedbackId (PK)         |
-| UserId (FK)             |
-| Subject                 |
-| Message                 |
-| Status                  |
-| CreatedAt               |
-+-------------------------+
++------------------------------+
+|            Plans             |
++------------------------------+
+| PlanId (PK)                 |
+| Name                        |
+| Description                 |
+| Price                       |
+| Credits                     |
+| IsActive                    |
+| CreatedAt                   |
++------------------------------+
+               │
+               │1
+               │
+               │*
++------------------------------+
+|          Payments           |
++------------------------------+
+| PaymentId (PK)             |
+| UserId (FK)                |
+| PlanId (FK)                |
+| Amount                     |
+| CreditsPurchased           |
+| StripePaymentIntentId      |
+| PaymentStatus              |
+| PurchasedAt                |
++------------------------------+
+
 
 Users (1)
    │
    │
    │*
-+-------------------------+
-|        Issues           |
-+-------------------------+
-| IssueId (PK)            |
-| UserId (FK)             |
-| Subject                 |
-| Description             |
-| Status                  |
-| ResolvedByAdmin         |
-| CreatedAt               |
-+-------------------------+
++------------------------------+
+|         Feedbacks           |
++------------------------------+
+| FeedbackId (PK)            |
+| UserId (FK)                |
+| Subject                    |
+| Message                    |
+| Rating(1-5)                |
+| IsPublic                   |
+| Status                     |
+| AdminResponse              |
+| CreatedAt                  |
+| UpdatedAt                  |
++------------------------------+
+
+
+Users (1)
+   │
+   │
+   │*
++------------------------------+
+|           Issues            |
++------------------------------+
+| IssueId (PK)               |
+| UserId (FK)                |
+| Subject                    |
+| Description                |
+| Status                     |
+| AdminResponse              |
+| ResolvedAt                 |
+| CreatedAt                  |
+| UpdatedAt                  |
++------------------------------+
+
 
 Users (1)
    │
    │
    │0..1
-+-------------------------+
-|    DeletedAccounts      |
-+-------------------------+
-| DeletedId (PK)          |
-| UserId (FK)             |
-| Email                   |
-| Reason                  |
-| DeletedAt               |
-+-------------------------+
++------------------------------+
+|      DeletedAccounts        |
++------------------------------+
+| DeletedId (PK)             |
+| UserId (FK)                |
+| Email                      |
+| Reason                     |
+| DeletedAt                  |
++------------------------------+
+
+
+ENUMS:
+
++------------------------------+
+|      UserRole                |
++------------------------------+
+| Admin                        |
+| User                         |
++------------------------------+
+
+
++------------------------------+
+|      TransactionType         |
++------------------------------+
+| Credit                       |
+| Debit                        |
++------------------------------+
+
+
++------------------------------+
+|      PaymentStatus           |
++------------------------------+
+| Pending                      |
+| Succeeded                    |
+| Failed                       |
++------------------------------+
+
++------------------------------+
+|      VersionType             |
++------------------------------+
+| Original                     |
+| Regenerated                  |
+| Expanded                     |
+| Shortened                    |
++------------------------------+
+
+
++------------------------------+
+|      FeedbackStatus          |
++------------------------------+
+| Pending                      |
+| Resolved                     |                   
++------------------------------+
+
++------------------------------+
+|      IssueStatus             |
++------------------------------+
+| Pending                      |
+| InProgress                   |
+| Resolved                     |
++------------------------------+
+
+
+Fluent API Relationships:
+
+User (1)
+│
+├── RefreshTokens (*)
+├── Blogs (*)
+├── CreditTransactions (*)
+├── Payments (*)
+├── Feedbacks (*)
+├── Issues (*)
+└── DeletedAccounts (0..1)
+
+Blog (1)
+├── BlogVersions (*)
+└── BlogImages (*)
+
+Plan (1)
+└── Payments (*)
+
+
+
+
+
