@@ -199,6 +199,50 @@ Success Response:
   "message": "Profile picture removed successfully."
 }
 
+2.5 Change Password
+
+Endpoint: 			PUT /api/profile/change-password
+Authorization: 		        User
+
+Request:
+
+{
+  "oldPassword": "OldPassword@123",
+  "newPassword": "NewPassword@123",
+  "confirmNewPassword": "NewPassword@123"
+}
+
+Success Response (200 OK):
+
+{
+  "message": "Password changed successfully."
+}
+
+Error Responses:
+
+400 Bad Request
+
+{
+  "message": "Old password is incorrect."
+}
+
+400 Bad Request
+
+{
+  "message": "New password and confirm password do not match."
+}
+
+400 Bad Request
+
+{
+  "message": "New password must be different from the old password."
+}
+
+401 Unauthorized
+
+{
+  "message": "Unauthorized access."
+}
 
 
 2.5 Delete Account:
@@ -221,11 +265,10 @@ Success Response
 
 3. AI Blog APIs:
 
-
 3.1 Generate Blog:
 
-Endpoint:			POST /api/blogs/generate
-Authorization:			User
+Endpoint: 			POST /api/blogs/generate
+Authorization: 			User
 
 Request:
 {
@@ -233,11 +276,12 @@ Request:
   "tone": "Professional",
   "audience": "Students",
   "category": "Technology",
+  "language": "English",
   "wordCount": 1000
 }
 
-
 Success Response (200 OK):
+
 {
   "message": "Blog generated successfully.",
   "creditsUsed": 5,
@@ -251,109 +295,122 @@ Success Response (200 OK):
   }
 }
 
-
 Error Responses:
 
-
-400 Bad Request:
+400 Bad Request
 
 {
   "message": "Invalid blog generation request."
 }
 
-
-402 Payment Required:
+402 Payment Required
 
 {
   "message": "Insufficient credits. Please purchase a subscription plan."
 }
 
-
-
 3.2 Regenerate Blog:
 
-Endpoint:			POST /api/blogs/{blogId}/regenerate
-Authorization:			User
+Endpoint: 			POST /api/blogs/{blogId}/regenerate
+Authorization:		        User
 
-Request:
-{
-  "instructions": "Make the content more engaging."
-}
+Request:			None
 
+Success Response (200 OK):
 
-Success Response:
 {
   "message": "Blog regenerated successfully.",
   "creditsUsed": 5,
   "remainingCredits": 90,
   "versionId": 4,
-  "content": "New regenerated blog..."
+  "content": "Regenerated blog content..."
 }
 
-
 Error Responses:
+
+404 Not Found
+
 {
   "message": "Blog not found."
 }
 
+402 Payment Required
 
+{
+  "message": "Insufficient credits. Please purchase a subscription plan."
+}
 
 3.3 Expand Blog:
 
-Endpoint:			POST /api/blogs/{blogId}/expand
-Authorization:			User
+Endpoint: 			POST /api/blogs/{blogId}/expand
+Authorization: 			User
 
-Request:
-{
-  "additionalWords": 500
-}
+Request:			None
 
+Success Response (200 OK):
 
-Success Response:
 {
   "message": "Blog expanded successfully.",
   "creditsUsed": 2,
   "remainingCredits": 88,
   "versionId": 5,
-  "content": "Expanded blog..."
+  "content": "Expanded blog content..."
 }
 
+Error Responses:
 
+404 Not Found
+
+{
+  "message": "Blog not found."
+}
+
+402 Payment Required
+
+{
+  "message": "Insufficient credits. Please purchase a subscription plan."
+}
 
 3.4 Shorten Blog:
 
-Endpoint:			POST /api/blogs/{blogId}/shorten
-Authorization:			User
+Endpoint: 			POST /api/blogs/{blogId}/shorten
+Authorization:		        User
 
-Request:
-{
-  "targetWordCount": 500
-}
+Request:			None
 
+Success Response (200 OK):
 
-Success Response:
 {
   "message": "Blog shortened successfully.",
   "creditsUsed": 2,
   "remainingCredits": 86,
   "versionId": 6,
-  "content": "Shortened blog..."
+  "content": "Shortened blog content..."
 }
 
+Error Responses:
 
+404 Not Found
 
-3.5 Generate Blog Image:
-
-Endpoint:			POST /api/blogs/{blogId}/generate-image
-Authorization:			User
-
-Request:
 {
-  "prompt": "A futuristic AI robot writing a blog."
+  "message": "Blog not found."
 }
 
+402 Payment Required
 
-Success Response:
+{
+  "message": "Insufficient credits. Please purchase a subscription plan."
+}
+
+3.5 Generate Blog Image
+
+Endpoint: 			POST /api/blogs/{blogId}/generate-image
+Authorization:		        User
+
+Request:			None
+
+Success Response (200 OK):
+
 {
   "message": "Image generated successfully.",
   "creditsUsed": 10,
@@ -361,6 +418,19 @@ Success Response:
   "imageUrl": "https://storage/images/blog15.png"
 }
 
+Error Responses:
+
+404 Not Found
+
+{
+  "message": "Blog not found."
+}
+
+402 Payment Required
+
+{
+  "message": "Insufficient credits. Please purchase a subscription plan."
+}
 
 4. Blog Management APIs:
 
@@ -376,6 +446,7 @@ Success Response:
   {
     "blogId": 15,
     "title": "Understanding AI",
+    "category": "Technology",
     "wordCount": 1000,
     "createdAt": "2026-07-21",
     "updatedAt": "2026-07-21"
@@ -1030,6 +1101,7 @@ Success Response
     "issueId": 1,
     "userName": "johnsmith",
     "subject": "Payment Failed",
+    "description": "i was trying but payment is constantly showing errors...",
     "status": "Pending",
     "createdAt": "2026-07-21"
   }

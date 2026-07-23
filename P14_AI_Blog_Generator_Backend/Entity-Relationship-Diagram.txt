@@ -184,10 +184,66 @@ Users (1)
 ENUMS:
 
 +------------------------------+
-|      UserRole                |
+|         UserRole             |
 +------------------------------+
 | Admin                        |
 | User                         |
++------------------------------+
+
+
++------------------------------+
+|         BlogTone             |
++------------------------------+
+| Professional                 |
+| Formal                       |
+| Casual                       |
+| Friendly                     |
+| Persuasive                   |
+| Creative                     |
+| Humorous                     |
++------------------------------+
+
+
++------------------------------+
+|       BlogAudience           |
++------------------------------+
+| Students                     |
+| Developers                   |
+| BusinessOwners               |
+| Professionals                |
+| Teachers                     |
+| Marketers                    |
+| Entrepreneurs                |
+| General                      |
++------------------------------+
+
+
++------------------------------+
+|       BlogCategory           |
++------------------------------+
+| Technology                   |
+| Business                     |
+| Finance                      |
+| Health                       |
+| Education                    |
+| Travel                       |
+| Food                         |
+| Sports                       |
+| Lifestyle                    |
+| Marketing                    |
+| Entertainment                |
+| Science                      |
++------------------------------+
+
+
++------------------------------+
+|      BlogWordCount           |
++------------------------------+
+| 300                          |
+| 500                          |
+| 1000                         |
+| 1500                         |
+| 2000                         |
 +------------------------------+
 
 
@@ -207,8 +263,9 @@ ENUMS:
 | Failed                       |
 +------------------------------+
 
+
 +------------------------------+
-|      VersionType             |
+|       VersionType            |
 +------------------------------+
 | Original                     |
 | Regenerated                  |
@@ -221,17 +278,17 @@ ENUMS:
 |      FeedbackStatus          |
 +------------------------------+
 | Pending                      |
-| Resolved                     |                   
+| Resolved                     |
 +------------------------------+
 
+
 +------------------------------+
-|      IssueStatus             |
+|        IssueStatus           |
 +------------------------------+
 | Pending                      |
 | InProgress                   |
 | Resolved                     |
 +------------------------------+
-
 
 Fluent API Relationships:
 
