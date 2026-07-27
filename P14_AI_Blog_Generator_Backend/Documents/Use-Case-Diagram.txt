@@ -18,8 +18,8 @@ User ------------------------>| (View Credits)                       |
 User ------------------------>| (Buy Credit Plan)                    |
 User ------------------------>| (View Payment History)               |
 User ------------------------>| (View Profile)                       |
-User ------------------------>| (Update Profile)                     |
-User ------------------------>| (Upload Profile Picture)             |
+User ------------------------>| (Update Profile{username/password}   |
+User ------------------------>| (Upload/delete Profile Picture)      |
 User ------------------------>| (Delete Account)                     |
 User ------------------------>| (Submit Feedback)                    |
 User ------------------------>| (Raise Issue/Query)                  |
@@ -31,7 +31,6 @@ Admin ----------------------->| (View Users)                         |
 Admin ----------------------->| (View User Details)                  |
 Admin ----------------------->| (View All Blogs)                     |
 Admin ----------------------->| (View Blog Details)                  |
-Admin ----------------------->| (Delete Any Blog)                    |
 Admin ----------------------->| (View Payments)                      |
 Admin ----------------------->| (Manage Subscription Plans)          |
 Admin ----------------------->| (View Deleted Users)                 |
@@ -69,10 +68,6 @@ Generate AI Image
 Buy Credit Plan
     <<include>>
     Stripe Payment
-
-Update Profile
-    <<extend>>
-    Upload Profile Picture
 
 Delete Account
     <<extend>>

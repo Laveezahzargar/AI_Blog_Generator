@@ -2,8 +2,8 @@
 |            Users             |
 +------------------------------+
  | UserId (PK)                 |
- | UserName                    |
- | Email                       |
+ | UserName(unique)            |
+ | Email(unique)               |
  | PasswordHash                |
  | Role                        |
  | ProfilePictureUrl           |
@@ -42,8 +42,7 @@ Users (1)
 | Content                     |
 | Tone                        |
 | Audience                    |
-| Language                    |
-| Keywords                    |
+| Category                    |
 | WordCount                   |
 | CreditsUsed                 |
 | CreatedAt                   |
@@ -78,22 +77,6 @@ Blogs (1)
 | Prompt                      |
 | ImageUrl                    |
 | CreditsUsed                 |
-| CreatedAt                   |
-+------------------------------+
-
-
-Users (1)
-   │
-   │
-   │*
-+------------------------------+
-|    CreditTransactions        |
-+------------------------------+
-| TransactionId (PK)          |
-| UserId (FK)                 |
-| CreditAmount                |
-| TransactionType             |
-| Description                 |
 | CreatedAt                   |
 +------------------------------+
 
@@ -246,15 +229,6 @@ ENUMS:
 | 2000                         |
 +------------------------------+
 
-
-+------------------------------+
-|      TransactionType         |
-+------------------------------+
-| Credit                       |
-| Debit                        |
-+------------------------------+
-
-
 +------------------------------+
 |      PaymentStatus           |
 +------------------------------+
@@ -296,7 +270,6 @@ User (1)
 │
 ├── RefreshTokens (*)
 ├── Blogs (*)
-├── CreditTransactions (*)
 ├── Payments (*)
 ├── Feedbacks (*)
 ├── Issues (*)

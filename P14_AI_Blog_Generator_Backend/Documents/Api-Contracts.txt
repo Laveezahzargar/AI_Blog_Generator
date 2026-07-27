@@ -193,6 +193,7 @@ Success Response :
 2.4 Delete Profile Picture:
 
 Endpoint:			DELETE /api/profile/picture
+Authorization:			User
 
 Success Response:
 {
@@ -245,7 +246,7 @@ Error Responses:
 }
 
 
-2.5 Delete Account:
+2.6 Delete Account:
 
 Endpoint:			DELETE /api/profile
 Authorization:			User
@@ -276,7 +277,6 @@ Request:
   "tone": "Professional",
   "audience": "Students",
   "category": "Technology",
-  "language": "English",
   "wordCount": 1000
 }
 
@@ -290,6 +290,7 @@ Success Response (200 OK):
     "blogId": 15,
     "title": "Understanding Artificial Intelligence",
     "content": "Generated AI blog content...",
+    "category":"Technology",
     "wordCount": 1000,
     "createdAt": "2026-07-21T10:30:00"
   }
@@ -415,6 +416,7 @@ Success Response (200 OK):
   "message": "Image generated successfully.",
   "creditsUsed": 10,
   "remainingCredits": 76,
+  "imageId":12,
   "imageUrl": "https://storage/images/blog15.png"
 }
 
@@ -454,6 +456,7 @@ Success Response:
   {
     "blogId": 16,
     "title": "Machine Learning Basics",
+    "category": "Technology",
     "wordCount": 800,
     "createdAt": "2026-07-22",
     "updatedAt": "2026-07-22"
@@ -471,6 +474,7 @@ Request:			None
 Success Response:
 {
   "blogId": 15,
+  "currentVersion":"Original",
   "title": "Understanding AI",
   "prompt": "Explain Artificial Intelligence",
   "content": "Blog content...",
@@ -559,34 +563,6 @@ Error Response:
 {
   "message": "Unauthorized."
 }
-
-
-
-5.2 Get Credit Transaction History:
-
-Endpoint:			GET /api/credits/history
-Authorization:			User
-
-Request:			None
-
-
-Success Response:
-[
-  {
-    "transactionId": 1,
-    "creditAmount": 100,
-    "transactionType": "Credit",
-    "description": "Welcome Bonus",
-    "createdAt": "2026-07-20T10:00:00"
-  },
-  {
-    "transactionId": 2,
-    "creditAmount": 5,
-    "transactionType": "Debit",
-    "description": "AI Blog Generation",
-    "createdAt": "2026-07-21T12:30:00"
-  }
-]
 
 
 
@@ -679,7 +655,8 @@ Success Response:
 {
   "message": "Payment successful.",
   "creditsAdded": 100,
-  "availableCredits": 176
+  "availableCredits": 176,
+  "paymentStatus":"Succeeded"
 }
 
 
@@ -954,6 +931,7 @@ Success Response
   {
     "blogId": 15,
     "title": "Artificial Intelligence",
+    "category":"Technology",
     "userName": "johnsmith",
     "createdAt": "2026-07-21"
   }
@@ -1003,36 +981,7 @@ Success Response
 
 
 
-10.7 Get Credit Transactions:
-
-Endpoint:			GET /api/admin/credit-transactions
-Authorization:			Admin
-
-Request:			None
-
-Success Response
-[
-  {
-    "transactionId": 1,
-    "userName": "johnsmith",
-    "creditAmount": 5,
-    "transactionType": "Debit",
-    "description": "AI Blog Generation",
-    "createdAt": "2026-07-21"
-  },
-  {
-    "transactionId": 2,
-    "userName": "johnsmith",
-    "creditAmount": 100,
-    "transactionType": "Credit",
-    "description": "Standard Plan Purchased",
-    "createdAt": "2026-07-22"
-  }
-]
-
-
-
-10.8 Get Deleted Accounts:
+10.7 Get Deleted Accounts:
 
 Endpoint:			GET /api/admin/deleted-users
 Authorization:			Admin
@@ -1051,7 +1000,7 @@ Success Response
 
 
 
-10.9 Get All Feedback:
+10.8 Get All Feedback:
 
 Endpoint:			GET /api/admin/feedback
 Authorization:			Admin
@@ -1072,7 +1021,7 @@ Success Response
 
 
 
-10.10 Resolve Feedback:
+10.9 Resolve Feedback:
 
 Endpoint:			PUT /api/admin/feedback/{feedbackId}/resolve
 Authorization:			Admin
@@ -1088,7 +1037,7 @@ Success Response
 
 
 
-10.11 Get All Issues:
+10.10 Get All Issues:
 
 Endpoint:			GET /api/admin/issues
 Authorization:			Admin
@@ -1109,7 +1058,7 @@ Success Response
 
 
 
-10.12 Resolve Issue:
+10.11 Resolve Issue:
 
 Endpoint:			PUT /api/admin/issues/{issueId}/resolve
 Authorization:			Admin
@@ -1121,5 +1070,119 @@ Request
 Success Response
 {
   "message": "Issue resolved successfully."
+}
+
+
+10.12 Get User Payment History:
+
+Endpoint:			GET /api/admin/users/{userId}/payments 
+Description:			Returns the complete payment history of a specific user.
+Authorization:			Admin
+
+Success Response (200 OK)
+{
+  "success": true,
+  "message": "Payment history retrieved successfully.",
+  "data": [
+    {
+      "paymentId": 1,
+      "planName": "Standard Plan",
+      "amount": 199.00,
+      "creditsPurchased": 500,
+      "paymentStatus": "Succeeded",
+      "purchasedAt": "2026-07-24T10:30:00Z"
+    },
+    {
+      "paymentId": 2,
+      "planName": "Premium Plan",
+      "amount": 499.00,
+      "creditsPurchased": 1500,
+      "paymentStatus": "Succeeded",
+      "purchasedAt": "2026-08-05T12:15:00Z"
+    }
+  ]
+}
+
+
+Error Responses:
+
+404 Not Found
+{
+  "success": false,
+  "message": "User not found."
+}
+
+10.13 Create Subscription Plan:
+
+Endpoint:			POST /api/admin/plans
+Authorization:			Admin
+
+Request:
+{
+  "name": "Premium Plan",
+  "description": "Best value for frequent users.",
+  "price": 499,
+  "credits": 1500
+}
+
+Success Response (201 Created)
+{
+  "success": true,
+  "message": "Subscription plan created successfully."
+}
+
+Error Responses:
+
+400 Bad Request
+{
+  "success": false,
+  "message": "Invalid plan details."
+}
+
+10.14 Update Subscription Plan:
+
+Endpoint:			PUT /api/admin/plans/{planId}
+Authorization:			Admin
+
+Request:
+{
+  "name": "Premium Plan",
+  "description": "Updated plan description.",
+  "price": 599,
+  "credits": 1800,
+  "isActive": true
+}
+
+Success Response (200 OK)
+{
+  "success": true,
+  "message": "Subscription plan updated successfully."
+}
+
+Error Responses
+
+404 Not Found
+{
+  "success": false,
+  "message": "Subscription plan not found."
+}
+
+10.15 Delete Subscription Plan:
+
+Endpoint:			DELETE /api/admin/plans/{planId}
+Authorization:			Admin
+
+Success Response (200 OK)
+{
+  "success": true,
+  "message": "Subscription plan deleted successfully."
+}
+
+Error Responses
+
+404 Not Found
+{
+  "success": false,
+  "message": "Subscription plan not found."
 }
 

@@ -103,6 +103,7 @@ public class GenerateBlogResponseDto
 {
     int BlogId;
     string Title;
+    string Category;
     string Content;
     int WordCount;
 
@@ -110,34 +111,6 @@ public class GenerateBlogResponseDto
     int RemainingCredits;
 
     DateTime CreatedAt;
-}
-
-->RegenerateBlogRequestDto
-
-public class RegenerateBlogRequestDto
-{
-    string Instructions;
-}
-
-->ExpandBlogRequestDto
-
-public class ExpandBlogRequestDto
-{
-    int AdditionalWords;
-}
-
-->ShortenBlogRequestDto
-
-public class ShortenBlogRequestDto
-{
-    int TargetWordCount;
-}
-
-->GenerateImageRequestDto
-
-public class GenerateImageRequestDto
-{
-    string Prompt;
 }
 
 ->GenerateImageResponseDto
@@ -160,6 +133,8 @@ public class BlogListDto
     int BlogId;
 
     string Title;
+    
+    string Category;
 
     int WordCount;
 
@@ -183,10 +158,6 @@ public class BlogDetailsDto
     string Tone;
 
     string Audience;
-
-    string Language;
-
-    string Keywords;
 
     int WordCount;
 

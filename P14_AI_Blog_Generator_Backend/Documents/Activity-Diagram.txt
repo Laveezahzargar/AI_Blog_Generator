@@ -126,7 +126,7 @@ Blog    PDF         Blog        Blog         Blog          Image          Blog
                                 Add Purchased Credits
                                         │
                                         ▼
-                          Create Credit Transaction
+                          Create Credit Transaction//
                                         │
                                         ▼
                            Display Success Message
@@ -213,7 +213,7 @@ Update Profile  Upload Picture  Delete Picture  Delete Account Change Password
                              │
  ┌─────────┬─────────┬──────────┬────────────┬───────────┬──────────┬
  ▼           ▼             ▼             ▼               ▼              ▼             ▼
-Users       Blogs       Payments Credit Transactions       Feedback         Issues      Deleted Users
+Users       Blogs       Payments Credit Transactions//   Feedback         Issues      Deleted Users
                                                           │               │
                                                           ▼              ▼
                                                     Resolve Feedback  Resolve Issues

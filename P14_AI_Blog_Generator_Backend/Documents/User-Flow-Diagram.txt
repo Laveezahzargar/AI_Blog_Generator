@@ -5,7 +5,7 @@ Landing Page
         │
         ▼
 Generate Blog Form
-(Topic, Tone, Audience, Word Count, Language)
+(Topic, Tone, Audience, Word Count, category)
         │
         ▼
 User clicks Generate
@@ -113,7 +113,7 @@ Credits          Credits              │                     Logout
       │             ├──────────────► Regenerate Blog
       │             ├──────────────► Generate AI Image
       │             ├──────────────► Delete Blog
-      │             └──────────────► Saved to My Blogs
+      │            
       │
       ▼
 Purchase Plan (Stripe)
@@ -125,7 +125,7 @@ Credits Added
 Return to Dashboard
       │
       ▼
-                 Raise Feedback / Report Issue
+                 Raise Feedback / Report Issue (view my feedbacks / mu issues)
                               │
                               ▼
                              END

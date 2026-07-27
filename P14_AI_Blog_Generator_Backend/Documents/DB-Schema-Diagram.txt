@@ -36,8 +36,7 @@
 | Content     | nvarchar(max) | Required           | Generated blog content          |
 | Tone        | nvarchar(100) | Required           | Blog tone                       |
 | Audience    | nvarchar(100) | Required           | Intended audience               |
-| Language    | nvarchar(50)  | Required           | Blog language                   |
-| Keywords    | nvarchar(500) | Nullable           | Keywords used                   |
+| Category    | nvarchar(500) | Required           | chosen category used            |
 | WordCount   | int           | Required           | Total word count                |
 | CreditsUsed | int           | Required           | Credits deducted for generation |
 | CreatedAt   | datetime2     | Required           | Blog creation date              |
@@ -66,18 +65,7 @@
 | CreditsUsed | int           | Required           | Credits deducted        |
 | CreatedAt   | datetime2     | Required           | Image generation date   |
 
-6. CreditTransactions:
-
-| Column          | Data Type     | Constraints        | Description                   |
-| --------------- | ------------- | ------------------ | ----------------------------- |
-| TransactionId   | int           | PK, Identity       | Credit transaction identifier |
-| UserId          | int           | FK → Users(UserId) | User                          |
-| CreditAmount    | int           | Required           | Credits added or deducted     |
-| TransactionType | int           | Required           | TransactionType enum          |
-| Description     | nvarchar(255) | Required           | Transaction description       |
-| CreatedAt       | datetime2     | Required           | Transaction date              |
-
-7. Plans:
+6. Plans:
 
 | Column      | Data Type     | Constraints              | Description                          |
 | ----------- | ------------- | ------------------------ | ------------------------------------ |
@@ -89,7 +77,7 @@
 | IsActive    | bit           | Required, Default = true | Indicates whether the plan is active |
 | CreatedAt   | datetime2     | Required                 | Plan creation date                   |
 
-8. Payments:
+7. Payments:
 
 | Column                | Data Type     | Constraints        | Description               |
 | --------------------- | ------------- | ------------------ | ------------------------- |
@@ -102,7 +90,7 @@
 | PaymentStatus         | int           | Required           | PaymentStatus enum        |
 | PurchasedAt           | datetime2     | Required           | Payment completion date   |
 
-9. Feedbacks:
+8. Feedbacks:
 
 | Column        | Data Type     | Constraints               | Description                 |
 | ------------- | ------------- | ------------------------- | --------------------------- |
@@ -117,7 +105,7 @@
 | CreatedAt     | datetime2     | Required                  | Feedback submission date    |
 | UpdatedAt     | datetime2     | Nullable                  | Last update date            |
 
-10. Issues:
+9. Issues:
 
 | Column        | Data Type     | Constraints        | Description                       |
 | ------------- | ------------- | ------------------ | --------------------------------- |
@@ -131,7 +119,7 @@
 | CreatedAt     | datetime2     | Required           | Issue creation date               |
 | UpdatedAt     | datetime2     | Nullable           | Last update date                  |
 
-11. DeletedAccounts:
+10. DeletedAccounts:
 
 | Column    | Data Type     | Constraints        | Description                 |
 | --------- | ------------- | ------------------ | --------------------------- |
@@ -141,8 +129,12 @@
 | Reason    | nvarchar(500) | Nullable           | Reason for account deletion |
 | DeletedAt | datetime2     | Required           | Account deletion date       |
 
+When a user deletes their account:
 
-
+• Users.IsDeleted = true
+• A record is inserted into DeletedAccounts
+• Login is blocked
+• Existing blogs, payments, feedback, and issues are retained
 
 RELATIONSHIPS:
 
@@ -150,7 +142,6 @@ RELATIONSHIPS:
 | ------------ | --------------------- | ------------------ |
 | Users        | One-to-Many           | RefreshTokens      |
 | Users        | One-to-Many           | Blogs              |
-| Users        | One-to-Many           | CreditTransactions |
 | Users        | One-to-Many           | Payments           |
 | Users        | One-to-Many           | Feedbacks          |
 | Users        | One-to-Many           | Issues             |

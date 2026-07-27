@@ -42,9 +42,11 @@
              |               Business Logic Layer (Services)                |
              +--------------------------------------------------------------+
              | Authentication Service                                       |
+             | Profile Service                                              |
              | Blog Service                                                 |
              | Credit Service                                               |
              | Payment Service                                              |
+             | Plan Service                                                 |
              | Feedback Service                                             |
              | Issue Service                                                |
              | Admin Service                                                |
@@ -71,7 +73,6 @@
                                                           | Blogs                      |
                                                           | BlogVersions               |
                                                           | BlogImages                 |
-                                                          | CreditTransactions         |
                                                           | Plans                      |
                                                           | Payments                   |
                                                           | Feedbacks                  |
@@ -114,7 +115,7 @@ Backend				ASP.NET Core Web API (.NET 8)
 Authentication			JWT + Refresh Token
 ORM				Entity Framework Core
 Database			SQL Server
-AI Integration			OpenAI API / Gemini API (whichever you use)
+AI Integration			OpenAI API or Gemini API (whichever you use)
 Payment Gateway			Stripe
 File Storage			Local Storage / Cloud Storage
 API Testing			Postman

@@ -14,6 +14,7 @@ POST	     /api/auth/logout				Logout user and revoke refresh token
 Method	     Endpoint					Description
 GET	     /api/profile				Get logged-in user's profile
 PUT	     /api/profile				Update profile details
+PUT         /api/profile/change-password               Can change his password
 POST	     /api/profile/upload-picture		Upload profile picture
 DELETE	     /api/profile				Delete user account
 DELETE       /api/profile/picture			Delete profile picture
@@ -46,7 +47,6 @@ Note: Copy Blog does not require a backend API because copying text is handled b
 
 Method	    Endpoint					Description
 GET	    /api/credits				Get available credits
-GET	    /api/credits/history			Get credit transaction history
 GET         /api/credits/pricing			Get pricing details of using AI services
 
 
@@ -90,12 +90,12 @@ GET	    /api/admin/users/{userId}			Get user details
 GET	    /api/admin/blogs				Get all blogs
 GET	    /api/admin/blogs/{blogId}			Get blog details
 GET	    /api/admin/payments				View all payments
-GET         /api/admin/credit-transactions		View credit history of users
 GET	    /api/admin/deleted-users			View deleted user accounts
 GET	    /api/admin/feedback				View all feedback
 PUT	    /api/admin/feedback/{feedbackId}/resolve	Mark feedback as resolved
 GET	    /api/admin/issues				View all issues
 PUT	    /api/admin/issues/{issueId}/resolve		Mark issue as resolved
+GET         /api/admin/users/{userId}/payments          Get specific User's payment history
 POST   	    /api/admin/plans				Create subscription plan
 PUT         /api/admin/plans/{planId}			Update subscription plan
 DELETE      /api/admin/plans/{planId}			Delete subscription plan
@@ -105,10 +105,10 @@ API Summary:
 Module	Number of APIs:
 
 Authentication:			4
-Profile:			5
+Profile:			6
 AI Blog:			5
 Blog Management:		5
-Credits:			3
+Credits:			2
 Subscription Plans:		1
 Payments:			3
 Feedback:			4

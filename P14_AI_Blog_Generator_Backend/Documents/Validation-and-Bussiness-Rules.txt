@@ -23,9 +23,6 @@ A reason is required when deleting an account.
 
 Topic, Tone, Audience, Category, and Word Count are required.
 Word Count must be within the supported range.
-Regenerate instructions are optional.
-Expand and Shorten requests must specify valid word counts.
-Image generation requires a valid prompt.
 
 4. Feedback:
 
