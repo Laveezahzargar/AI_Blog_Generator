@@ -56,6 +56,8 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 
+builder.Services.AddScoped<IProfileService, ProfileService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
