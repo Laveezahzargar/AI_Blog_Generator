@@ -1,0 +1,84 @@
+2026-07-30 10:05:36.916 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-30 10:05:37.060 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-30 10:05:37.064 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-30 10:05:37.066 +05:30 [INF] Hosting environment: Development
+2026-07-30 10:05:37.067 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-30 10:05:47.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2026-07-30 10:05:47.603 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 324.8557ms
+2026-07-30 10:05:47.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2026-07-30 10:05:47.991 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.1801ms
+2026-07-30 10:06:02.877 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/register - application/json 80
+2026-07-30 10:06:02.896 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-30 10:06:02.976 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 10:06:03.041 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(P14_AI_Blog_Generator_Backend.DTOs.Authentication.RegisterRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 10:06:07.035 +05:30 [INF] Executed DbCommand (84ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__request_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 10:06:07.116 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 10:06:07.122 +05:30 [INF] Registering user strinnhvg
+2026-07-30 10:06:07.975 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (Size = 500), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([AvailableCredits], [CreatedAt], [Email], [PasswordHash], [ProfilePictureUrl], [Role], [UpdatedAt], [UserName])
+OUTPUT INSERTED.[UserId], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-07-30 10:06:08.036 +05:30 [INF] User 2 registered successfully.
+2026-07-30 10:06:08.068 +05:30 [INF] JWT generated for User 2
+2026-07-30 10:06:08.194 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiryDate], [Token], [UserId])
+OUTPUT INSERTED.[TokenId], INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3);
+2026-07-30 10:06:08.208 +05:30 [INF] Refresh token saved for User 2
+2026-07-30 10:06:08.225 +05:30 [INF] Executing ObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Authentication.AuthResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-30 10:06:08.283 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend) in 5228.1452ms
+2026-07-30 10:06:08.288 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 10:06:08.297 +05:30 [INF] HTTP POST /api/auth/register responded 201 in 5392.9577 ms
+2026-07-30 10:06:08.318 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/register - 201 null application/json; charset=utf-8 5440.885ms
+2026-07-30 10:06:56.959 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/register - application/json 80
+2026-07-30 10:06:56.970 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 10:06:56.974 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(P14_AI_Blog_Generator_Backend.DTOs.Authentication.RegisterRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 10:06:57.141 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__request_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 10:06:57.150 +05:30 [WRN] Registration failed. Email strinnhvg already exists.
+2026-07-30 10:06:57.157 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend) in 175.3398ms
+2026-07-30 10:06:57.161 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 10:06:57.166 +05:30 [ERR] Unhandled exception. TraceId: 0HNNDUG39JOLA:00000004
+P14_AI_Blog_Generator_Backend.Exceptions.ConflictException: Email is already registered.
+   at P14_AI_Blog_Generator_Backend.Services.AuthService.RegisterAsync(RegisterRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\AuthService.cs:line 43
+   at P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register(RegisterRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-30 10:06:57.261 +05:30 [INF] HTTP POST /api/auth/register responded 409 in 294.7756 ms
+2026-07-30 10:06:57.267 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/register - 409 null application/json 308.0334ms
+2026-07-30 10:23:26.346 +05:30 [INF] Application is shutting down...

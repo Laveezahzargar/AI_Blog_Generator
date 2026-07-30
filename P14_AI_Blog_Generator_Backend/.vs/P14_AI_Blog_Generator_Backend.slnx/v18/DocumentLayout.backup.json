@@ -3,20 +3,112 @@
   "WorkspaceRootPath": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\MiddlewareExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Middlewares\\MiddlewareExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\UnauthorizedException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\UnauthorizedException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\NotFoundException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\NotFoundException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ForbiddenException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\ForbiddenException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ConflictException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\ConflictException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\BadRequestException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\BadRequestException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\GlobalExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Middlewares\\GlobalExceptionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\ApiResponse\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiResponse\\ApiResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LogoutRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\Authentication\\LogoutRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IRefreshTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IRefreshTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IJwtService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Interfaces\\IJwtService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Configurations\\UserConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\DomainModels\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\AuthResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\Authentication\\AuthResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\Authentication\\RegisterRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RefreshTokenRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\Authentication\\RefreshTokenRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\Authentication\\LoginRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\Entity-Relationship-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\DTO-Documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\DTO-Documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Contracts.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\Api-Contracts.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Endpoints-Document.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\Api-Endpoints-Document.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\RefreshToken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enums\\BlogCategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\Entity-Relationship-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\DeletedAccountConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Configurations\\DeletedAccountConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -131,10 +219,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Configurations\\RefreshTokenConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Configurations\\UserConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\DB-Schema-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\DB-Schema-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -145,10 +229,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\User-Flow-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Documents\\User-Flow-Diagram.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,7 +238,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,46 +250,345 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "MiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\MiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Middlewares\\MiddlewareExtensions.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\MiddlewareExtensions.cs",
+              "RelativeToolTip": "Middlewares\\MiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:06:11.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-07-27T07:40:32.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-27T07:39:48.844Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T04:09:58.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:51:15.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:35:17.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnauthorizedException.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\UnauthorizedException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\UnauthorizedException.cs",
+              "RelativeToolTip": "Exceptions\\UnauthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:04:01.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:03:36.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForbiddenException.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ForbiddenException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ForbiddenException.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ForbiddenException.cs",
+              "RelativeToolTip": "Exceptions\\ForbiddenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:04:36.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConflictException.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ConflictException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ConflictException.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\ConflictException.cs",
+              "RelativeToolTip": "Exceptions\\ConflictException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:04:57.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T06:02:52.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Middlewares\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T05:49:04.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\ApiResponse\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "ApiResponse\\ApiResponse.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\ApiResponse\\ApiResponse.cs",
+              "RelativeToolTip": "ApiResponse\\ApiResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T05:08:12.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IJwtService.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "Interfaces\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:14:50.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRefreshTokenService.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IRefreshTokenService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IRefreshTokenService.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IRefreshTokenService.cs",
+              "RelativeToolTip": "Interfaces\\IRefreshTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:15:36.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LogoutRequestDto.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LogoutRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Authentication\\LogoutRequestDto.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LogoutRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Authentication\\LogoutRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:26:03.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:13:43.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAADwvyIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T04:43:47.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwEwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T04:52:35.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\User.cs",
+              "RelativeDocumentMoniker": "Models\\DomainModels\\User.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\User.cs",
+              "RelativeToolTip": "Models\\DomainModels\\User.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T04:26:27.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Authentication\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\AuthResponseDto.cs",
+              "RelativeToolTip": "DTOs\\Authentication\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:26:39.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Authentication\\RegisterRequestDto.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RegisterRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Authentication\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:24:12.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Authentication\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Authentication\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:25:34.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Authentication\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "RelativeToolTip": "DTOs\\Authentication\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T04:24:41.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DTO-Documentation.txt",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\DTO-Documentation.txt",
+              "RelativeDocumentMoniker": "Documents\\DTO-Documentation.txt",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\DTO-Documentation.txt",
+              "RelativeToolTip": "Documents\\DTO-Documentation.txt",
+              "ViewState": "AgIAAMkBAAAAAAAAAAAYwNQBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-07-28T04:11:12.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Api-Contracts.txt",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Contracts.txt",
+              "RelativeDocumentMoniker": "Documents\\Api-Contracts.txt",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Contracts.txt",
+              "RelativeToolTip": "Documents\\Api-Contracts.txt",
+              "ViewState": "AgIAAJcEAAAAAAAAAAAYwKMEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-07-28T04:10:51.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Api-Endpoints-Document.txt",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Endpoints-Document.txt",
+              "RelativeDocumentMoniker": "Documents\\Api-Endpoints-Document.txt",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Api-Endpoints-Document.txt",
+              "RelativeToolTip": "Documents\\Api-Endpoints-Document.txt",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwHEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-07-28T04:10:29.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Plan.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\Plan.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\Plan.cs",
@@ -222,7 +601,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 23,
+              "Title": "Entity-Relationship-Diagram.txt",
+              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt",
+              "RelativeDocumentMoniker": "Documents\\Entity-Relationship-Diagram.txt",
+              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt",
+              "RelativeToolTip": "Documents\\Entity-Relationship-Diagram.txt",
+              "ViewState": "AgIAABMBAAAAAAAAAAAYwB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-07-27T04:24:08.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\Payment.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\Payment.cs",
@@ -235,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "Issue.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\Issue.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\Issue.cs",
@@ -248,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "Feedback.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\Feedback.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\Feedback.cs",
@@ -261,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 27,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\RefreshToken.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\RefreshToken.cs",
@@ -274,20 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\User.cs",
-              "RelativeDocumentMoniker": "Models\\DomainModels\\User.cs",
-              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\User.cs",
-              "RelativeToolTip": "Models\\DomainModels\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T04:26:27.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "DeletedAccount.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\DeletedAccount.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\DeletedAccount.cs",
@@ -300,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 33,
               "Title": "BlogVersion.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\BlogVersion.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\BlogVersion.cs",
@@ -313,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 34,
               "Title": "BlogImage.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\BlogImage.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\BlogImage.cs",
@@ -326,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 35,
               "Title": "Blog.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Models\\DomainModels\\Blog.cs",
               "RelativeDocumentMoniker": "Models\\DomainModels\\Blog.cs",
@@ -339,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 36,
               "Title": "BlogConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\BlogConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\BlogConfiguration.cs",
@@ -352,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 37,
               "Title": "BlogAudience.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\BlogAudience.cs",
               "RelativeDocumentMoniker": "Enums\\BlogAudience.cs",
@@ -365,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 38,
               "Title": "VersionType.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\VersionType.cs",
               "RelativeDocumentMoniker": "Enums\\VersionType.cs",
@@ -378,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 39,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "Enums\\UserRole.cs",
@@ -391,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 40,
               "Title": "PaymentStatus.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\PaymentStatus.cs",
               "RelativeDocumentMoniker": "Enums\\PaymentStatus.cs",
@@ -404,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 41,
               "Title": "IssueStatus.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\IssueStatus.cs",
               "RelativeDocumentMoniker": "Enums\\IssueStatus.cs",
@@ -417,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 42,
               "Title": "FeedbackStatus.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\FeedbackStatus.cs",
               "RelativeDocumentMoniker": "Enums\\FeedbackStatus.cs",
@@ -430,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 43,
               "Title": "BlogWordCount.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\BlogWordCount.cs",
               "RelativeDocumentMoniker": "Enums\\BlogWordCount.cs",
@@ -443,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 44,
               "Title": "BlogTone.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\BlogTone.cs",
               "RelativeDocumentMoniker": "Enums\\BlogTone.cs",
@@ -456,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 45,
               "Title": "BlogCategory.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Enums\\BlogCategory.cs",
               "RelativeDocumentMoniker": "Enums\\BlogCategory.cs",
@@ -469,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 46,
               "Title": "DeletedAccountConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\DeletedAccountConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\DeletedAccountConfiguration.cs",
@@ -482,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 47,
               "Title": "IssueConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\IssueConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\IssueConfiguration.cs",
@@ -495,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 48,
               "Title": "FeedbackConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\FeedbackConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\FeedbackConfiguration.cs",
@@ -508,20 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Entity-Relationship-Diagram.txt",
-              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt",
-              "RelativeDocumentMoniker": "Documents\\Entity-Relationship-Diagram.txt",
-              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Entity-Relationship-Diagram.txt",
-              "RelativeToolTip": "Documents\\Entity-Relationship-Diagram.txt",
-              "ViewState": "AgIAAPMAAAAAAAAAAAAAAAcBAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-07-27T04:24:08.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 49,
               "Title": "PaymentConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\PaymentConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\PaymentConfiguration.cs",
@@ -534,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 50,
               "Title": "PlanConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\PlanConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\PlanConfiguration.cs",
@@ -547,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 51,
               "Title": "BlogImageConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\BlogImageConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\BlogImageConfiguration.cs",
@@ -560,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 52,
               "Title": "BlogVersionConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\BlogVersionConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\BlogVersionConfiguration.cs",
@@ -573,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 53,
               "Title": "RefreshTokenConfiguration.cs",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\RefreshTokenConfiguration.cs",
               "RelativeDocumentMoniker": "Configurations\\RefreshTokenConfiguration.cs",
@@ -586,20 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T04:52:35.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 54,
               "Title": "DB-Schema-Diagram.txt",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\DB-Schema-Diagram.txt",
               "RelativeDocumentMoniker": "Documents\\DB-Schema-Diagram.txt",
@@ -612,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 55,
               "Title": "Use-Case-Diagram.txt",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\Use-Case-Diagram.txt",
               "RelativeDocumentMoniker": "Documents\\Use-Case-Diagram.txt",
@@ -625,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 56,
               "Title": "User-Flow-Diagram.txt",
               "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Documents\\User-Flow-Diagram.txt",
               "RelativeDocumentMoniker": "Documents\\User-Flow-Diagram.txt",
@@ -634,19 +987,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-07-27T04:24:04.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Reno_Softwares\\P14_AI_Blog_Generator\\P14_AI_Blog_Generator_Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T04:09:58.37Z",
               "EditorCaption": ""
             }
           ]
