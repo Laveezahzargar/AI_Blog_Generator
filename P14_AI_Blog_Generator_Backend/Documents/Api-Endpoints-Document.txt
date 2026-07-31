@@ -35,9 +35,11 @@ POST	     /api/blogs/{blogId}/generate-image		Generate an AI image for a blog
 Method	    Endpoint					Description
 GET	    /api/blogs					Get all blogs of the logged-in user
 GET	    /api/blogs/{blogId}				Get a specific blog
-DELETE	    /api/blogs/{blogId}				Delete a blog
+GET         /api/blogs/{blogId}/images                  Get blog Images
 GET	    /api/blogs/{blogId}/download-pdf		Download blog as PDF
 GET         /api/blogs/{blogid}/versions		Get all blog versions
+DELETE	    /api/blogs/{blogId}				Delete a blog
+DELETE      /api/blogs/images/{imageId}                 Delete blog images
 
 Note: Copy Blog does not require a backend API because copying text is handled by the frontend/browser.
 

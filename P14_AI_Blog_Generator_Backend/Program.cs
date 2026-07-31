@@ -58,6 +58,8 @@ builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 
 builder.Services.AddScoped<IProfileService, ProfileService>();
 
+builder.Services.AddScoped<IBlogService, BlogService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

@@ -1,17 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ApiResponse",
-    "\\Controllers",
-    "\\DTOs",
-    "\\DTOs\\Authentication",
-    "\\Exceptions",
-    "\\Interfaces",
-    "\\Middlewares",
-    "\\Models",
-    "\\Models\\DomainModels",
-    "\\Services"
+    "\\Interfaces\\Profile",
+    "\\Services\\Profile"
   ],
-  "SelectedNode": "\\Exceptions\\BadRequestException.cs",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

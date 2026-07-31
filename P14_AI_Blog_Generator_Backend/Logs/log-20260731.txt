@@ -1,0 +1,238 @@
+2026-07-31 12:54:09.894 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-31 12:54:10.022 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-31 12:54:10.025 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-31 12:54:10.026 +05:30 [INF] Hosting environment: Development
+2026-07-31 12:54:10.027 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-31 12:54:23.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2026-07-31 12:54:23.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 245.692ms
+2026-07-31 12:54:24.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2026-07-31 12:54:24.256 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.7537ms
+2026-07-31 13:03:15.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 13:03:15.241 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-31 13:03:15.418 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '30-07-2026 11:33:56', Current time (UTC): '31-07-2026 07:33:15'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-31 13:03:15.468 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '30-07-2026 11:33:56', Current time (UTC): '31-07-2026 07:33:15'.
+2026-07-31 13:03:15.479 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-31 13:03:15.491 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-07-31 13:03:15.498 +05:30 [INF] HTTP GET /api/blogs responded 401 in 248.7330 ms
+2026-07-31 13:03:15.505 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 401 0 null 282.7952ms
+2026-07-31 13:03:22.137 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/login - application/json 82
+2026-07-31 13:03:22.146 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '30-07-2026 11:33:56', Current time (UTC): '31-07-2026 07:33:22'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-31 13:03:22.153 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '30-07-2026 11:33:56', Current time (UTC): '31-07-2026 07:33:22'.
+2026-07-31 13:03:22.158 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:03:22.221 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P14_AI_Blog_Generator_Backend.DTOs.Authentication.LoginRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-31 13:03:26.056 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2026-07-31 13:03:26.790 +05:30 [INF] JWT generated for User 5
+2026-07-31 13:03:27.093 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiryDate], [Token], [UserId])
+OUTPUT INSERTED.[TokenId], INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3);
+2026-07-31 13:03:27.143 +05:30 [INF] Refresh token saved for User 5
+2026-07-31 13:03:27.146 +05:30 [INF] User 5 logged in.
+2026-07-31 13:03:27.156 +05:30 [INF] Executing OkObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Authentication.AuthResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-31 13:03:27.217 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend) in 4986.2483ms
+2026-07-31 13:03:27.220 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:03:27.224 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 5082.9254 ms
+2026-07-31 13:03:27.244 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/login - 200 null application/json; charset=utf-8 5107.385ms
+2026-07-31 13:03:30.754 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 13:03:30.791 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:03:30.804 +05:30 [INF] Route matched with {action = "GetBlogs", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBlogs() on controller P14_AI_Blog_Generator_Backend.Controllers.BlogsController (P14_AI_Blog_Generator_Backend).
+2026-07-31 13:03:30.812 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend) in 3.4782ms
+2026-07-31 13:03:30.816 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:03:30.820 +05:30 [ERR] Unhandled exception. TraceId: 0HNNEQIVE5NTD:00000003
+System.InvalidOperationException: Unable to resolve service for type 'P14_AI_Blog_Generator_Backend.Interfaces.IBlogService' while attempting to activate 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method249(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-31 13:03:30.880 +05:30 [ERR] HTTP GET /api/blogs responded 500 in 117.4317 ms
+2026-07-31 13:03:30.884 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 500 null application/json 129.5389ms
+2026-07-31 13:04:31.809 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 13:04:31.822 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:04:31.825 +05:30 [INF] Route matched with {action = "GetBlogs", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBlogs() on controller P14_AI_Blog_Generator_Backend.Controllers.BlogsController (P14_AI_Blog_Generator_Backend).
+2026-07-31 13:04:31.831 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend) in 0.4591ms
+2026-07-31 13:04:31.834 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:04:31.836 +05:30 [ERR] Unhandled exception. TraceId: 0HNNEQIVE5NTF:00000001
+System.InvalidOperationException: Unable to resolve service for type 'P14_AI_Blog_Generator_Backend.Interfaces.IBlogService' while attempting to activate 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method249(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-31 13:04:31.848 +05:30 [ERR] HTTP GET /api/blogs responded 500 in 33.5381 ms
+2026-07-31 13:04:31.851 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 500 null application/json 41.9336ms
+2026-07-31 13:04:36.041 +05:30 [INF] Application is shutting down...
+2026-07-31 13:04:44.129 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-31 13:04:44.204 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-31 13:04:44.207 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-31 13:04:44.208 +05:30 [INF] Hosting environment: Development
+2026-07-31 13:04:44.208 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-31 13:04:51.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 13:04:51.716 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-31 13:04:51.892 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:04:51.930 +05:30 [INF] Route matched with {action = "GetBlogs", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBlogs() on controller P14_AI_Blog_Generator_Backend.Controllers.BlogsController (P14_AI_Blog_Generator_Backend).
+2026-07-31 13:04:52.173 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend) in 232.4828ms
+2026-07-31 13:04:52.184 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 13:04:52.188 +05:30 [ERR] Unhandled exception. TraceId: 0HNNEQOQIRSN4:00000001
+System.NotImplementedException: The method or operation is not implemented.
+   at P14_AI_Blog_Generator_Backend.Services.BlogService.GetBlogsAsync(Int32 userId) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Blog\BlogService.cs:line 23
+   at P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs() in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\BlogController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-31 13:04:52.344 +05:30 [ERR] HTTP GET /api/blogs responded 500 in 620.7426 ms
+2026-07-31 13:04:52.355 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 500 null application/json 719.3961ms
+2026-07-31 14:34:03.272 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs/1 - null null
+2026-07-31 14:34:03.292 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:03'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-31 14:34:03.309 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:03'.
+2026-07-31 14:34:03.317 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-31 14:34:03.328 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-07-31 14:34:03.332 +05:30 [INF] HTTP GET /api/blogs/1 responded 401 in 47.4110 ms
+2026-07-31 14:34:03.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs/1 - 401 0 null 66.145ms
+2026-07-31 14:34:10.110 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 14:34:10.117 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:10'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-31 14:34:10.121 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:10'.
+2026-07-31 14:34:10.125 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-31 14:34:10.129 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-07-31 14:34:10.132 +05:30 [INF] HTTP GET /api/blogs responded 401 in 16.2936 ms
+2026-07-31 14:34:10.136 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 401 0 null 26.6222ms
+2026-07-31 14:34:14.788 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/login - application/json 82
+2026-07-31 14:34:14.793 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:14'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-31 14:34:14.796 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '31-07-2026 08:33:26', Current time (UTC): '31-07-2026 09:04:14'.
+2026-07-31 14:34:14.797 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:14.813 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P14_AI_Blog_Generator_Backend.DTOs.Authentication.LoginRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-31 14:34:17.817 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2026-07-31 14:34:18.482 +05:30 [INF] JWT generated for User 5
+2026-07-31 14:34:18.767 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiryDate], [Token], [UserId])
+OUTPUT INSERTED.[TokenId], INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3);
+2026-07-31 14:34:18.815 +05:30 [INF] Refresh token saved for User 5
+2026-07-31 14:34:18.818 +05:30 [INF] User 5 logged in.
+2026-07-31 14:34:18.828 +05:30 [INF] Executing OkObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Authentication.AuthResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-31 14:34:18.860 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend) in 4045.2607ms
+2026-07-31 14:34:18.864 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:18.868 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 4075.2705 ms
+2026-07-31 14:34:18.883 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/login - 200 null application/json; charset=utf-8 4095.0149ms
+2026-07-31 14:34:22.914 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs - null null
+2026-07-31 14:34:22.920 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:22.922 +05:30 [INF] Route matched with {action = "GetBlogs", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBlogs() on controller P14_AI_Blog_Generator_Backend.Controllers.BlogsController (P14_AI_Blog_Generator_Backend).
+2026-07-31 14:34:22.926 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend) in 1.8514ms
+2026-07-31 14:34:22.930 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:22.934 +05:30 [ERR] Unhandled exception. TraceId: 0HNNEQOQIRSN6:00000004
+System.NotImplementedException: The method or operation is not implemented.
+   at P14_AI_Blog_Generator_Backend.Services.BlogService.GetBlogsAsync(Int32 userId) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Blog\BlogService.cs:line 23
+   at P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlogs() in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\BlogController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-31 14:34:22.946 +05:30 [ERR] HTTP GET /api/blogs responded 500 in 25.9901 ms
+2026-07-31 14:34:22.950 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs - 500 null application/json 35.7684ms
+2026-07-31 14:34:29.144 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/blogs/1 - null null
+2026-07-31 14:34:29.149 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlog (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:29.161 +05:30 [INF] Route matched with {action = "GetBlog", controller = "Blogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBlog(Int32) on controller P14_AI_Blog_Generator_Backend.Controllers.BlogsController (P14_AI_Blog_Generator_Backend).
+2026-07-31 14:34:29.173 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlog (P14_AI_Blog_Generator_Backend) in 7.877ms
+2026-07-31 14:34:29.177 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlog (P14_AI_Blog_Generator_Backend)'
+2026-07-31 14:34:29.181 +05:30 [ERR] Unhandled exception. TraceId: 0HNNEQOQIRSN6:00000005
+System.NotImplementedException: The method or operation is not implemented.
+   at P14_AI_Blog_Generator_Backend.Services.BlogService.GetBlogByIdAsync(Int32 userId, Int32 blogId) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Blog\BlogService.cs:line 30
+   at P14_AI_Blog_Generator_Backend.Controllers.BlogsController.GetBlog(Int32 blogId) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\BlogController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-31 14:34:29.190 +05:30 [ERR] HTTP GET /api/blogs/1 responded 500 in 41.5344 ms
+2026-07-31 14:34:29.193 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/blogs/1 - 500 null application/json 49.6285ms
+2026-07-31 14:47:50.264 +05:30 [INF] Application is shutting down...
+2026-07-31 14:50:08.237 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-31 14:50:08.310 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-31 14:50:08.313 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-31 14:50:08.314 +05:30 [INF] Hosting environment: Development
+2026-07-31 14:50:08.315 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-31 14:53:34.482 +05:30 [INF] Application is shutting down...

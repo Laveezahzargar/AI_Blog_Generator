@@ -652,3 +652,217 @@ P14_AI_Blog_Generator_Backend.Exceptions.NotFoundException: User not found.
 2026-07-30 15:24:14.803 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
 2026-07-30 15:24:14.813 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6938ms
 2026-07-30 15:35:03.788 +05:30 [INF] Application is shutting down...
+2026-07-30 15:35:54.089 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-30 15:35:54.221 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-30 15:35:54.232 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-30 15:35:54.237 +05:30 [INF] Hosting environment: Development
+2026-07-30 15:35:54.242 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-30 15:51:04.686 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - multipart/form-data; boundary=--------------------------834884500610225159495155 104713
+2026-07-30 15:51:04.770 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-30 15:51:05.107 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 15:51:05.168 +05:30 [INF] Route matched with {action = "UploadPicture", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPicture(Microsoft.AspNetCore.Http.IFormFile) on controller P14_AI_Blog_Generator_Backend.Controllers.ProfileController (P14_AI_Blog_Generator_Backend).
+2026-07-30 15:51:05.454 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-07-30 15:51:05.641 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend) in 459.3218ms
+2026-07-30 15:51:05.652 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 15:51:05.661 +05:30 [INF] HTTP POST /api/profile/upload-picture responded 400 in 760.0055 ms
+2026-07-30 15:51:05.681 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - 400 null application/problem+json; charset=utf-8 997.8401ms
+2026-07-30 15:51:18.658 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - multipart/form-data; boundary=--------------------------934155132895553657410356 104703
+2026-07-30 15:51:18.680 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 15:51:18.684 +05:30 [INF] Route matched with {action = "UploadPicture", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPicture(Microsoft.AspNetCore.Http.IFormFile) on controller P14_AI_Blog_Generator_Backend.Controllers.ProfileController (P14_AI_Blog_Generator_Backend).
+2026-07-30 15:51:21.698 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0 AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-07-30 15:51:21.752 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend) in 3059.0876ms
+2026-07-30 15:51:21.760 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 15:51:21.765 +05:30 [ERR] Unhandled exception. TraceId: 0HNNE4H1IMC2F:00000002
+P14_AI_Blog_Generator_Backend.Exceptions.NotFoundException: User not found.
+   at P14_AI_Blog_Generator_Backend.Services.ProfileService.UploadProfilePictureAsync(Int32 userId, IFormFile file) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Profile\ProfileService.cs:line 113
+   at P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture(IFormFile file) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\ProfileController.cs:line 58
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-30 15:51:21.860 +05:30 [INF] HTTP POST /api/profile/upload-picture responded 404 in 3186.5336 ms
+2026-07-30 15:51:21.877 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - 404 null application/json 3220.154ms
+2026-07-30 16:03:29.599 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/register - application/json 111
+2026-07-30 16:03:29.615 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:29.625 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(P14_AI_Blog_Generator_Backend.DTOs.Authentication.RegisterRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:03:30.698 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__request_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 16:03:30.713 +05:30 [WRN] Registration failed. Email laveezah.renosoftwares@outlook.com already exists.
+2026-07-30 16:03:30.717 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend) in 1086.7292ms
+2026-07-30 16:03:30.723 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:30.729 +05:30 [ERR] Unhandled exception. TraceId: 0HNNE4H1IMC2H:00000001
+P14_AI_Blog_Generator_Backend.Exceptions.ConflictException: Email is already registered.
+   at P14_AI_Blog_Generator_Backend.Services.AuthService.RegisterAsync(RegisterRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Authentication\AuthService.cs:line 43
+   at P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register(RegisterRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-30 16:03:30.746 +05:30 [INF] HTTP POST /api/auth/register responded 409 in 1135.6081 ms
+2026-07-30 16:03:30.750 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/register - 409 null application/json 1150.3973ms
+2026-07-30 16:03:39.564 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/register - application/json 110
+2026-07-30 16:03:39.575 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:39.577 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(P14_AI_Blog_Generator_Backend.DTOs.Authentication.RegisterRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:03:39.627 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__request_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 16:03:39.644 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__request_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-30 16:03:39.652 +05:30 [INF] Registering user laveezah.renosoftware@outlook.com
+2026-07-30 16:03:40.389 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 4000), @p4='?' (Size = 500), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([AvailableCredits], [CreatedAt], [Email], [PasswordHash], [ProfilePictureUrl], [Role], [UpdatedAt], [UserName])
+OUTPUT INSERTED.[UserId], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-07-30 16:03:40.444 +05:30 [INF] User 5 registered successfully.
+2026-07-30 16:03:40.470 +05:30 [INF] JWT generated for User 5
+2026-07-30 16:03:40.551 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiryDate], [Token], [UserId])
+OUTPUT INSERTED.[TokenId], INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3);
+2026-07-30 16:03:40.564 +05:30 [INF] Refresh token saved for User 5
+2026-07-30 16:03:40.570 +05:30 [INF] Executing ObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Authentication.AuthResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-30 16:03:40.597 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend) in 1015.1533ms
+2026-07-30 16:03:40.600 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Register (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:40.604 +05:30 [INF] HTTP POST /api/auth/register responded 201 in 1029.2101 ms
+2026-07-30 16:03:40.609 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/register - 201 null application/json; charset=utf-8 1045.0104ms
+2026-07-30 16:03:49.821 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/login - application/json 83
+2026-07-30 16:03:49.835 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:49.852 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P14_AI_Blog_Generator_Backend.DTOs.Authentication.LoginRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:03:49.886 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2026-07-30 16:03:49.903 +05:30 [WRN] Invalid login attempt for deleted account with laveezah.renosoftwares@outlook.com
+2026-07-30 16:03:49.907 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend) in 49.0671ms
+2026-07-30 16:03:49.910 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:49.913 +05:30 [ERR] Unhandled exception. TraceId: 0HNNE4H1IMC2H:00000003
+P14_AI_Blog_Generator_Backend.Exceptions.UnauthorizedException: Invalid email or password.
+   at P14_AI_Blog_Generator_Backend.Services.AuthService.LoginAsync(LoginRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Services\Authentication\AuthService.cs:line 120
+   at P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login(LoginRequestDto request) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Controllers\AuthController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at P14_AI_Blog_Generator_Backend.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend\Middlewares\GlobalExceptionMiddleware.cs:line 31
+2026-07-30 16:03:49.929 +05:30 [INF] HTTP POST /api/auth/login responded 401 in 94.7895 ms
+2026-07-30 16:03:49.933 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/login - 401 null application/json 111.4337ms
+2026-07-30 16:03:55.987 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/auth/login - application/json 82
+2026-07-30 16:03:55.998 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:56.002 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P14_AI_Blog_Generator_Backend.DTOs.Authentication.LoginRequestDto) on controller P14_AI_Blog_Generator_Backend.Controllers.AuthController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:03:56.015 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_Email_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__request_Email_0
+2026-07-30 16:03:56.368 +05:30 [INF] JWT generated for User 5
+2026-07-30 16:03:56.382 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiryDate], [Token], [UserId])
+OUTPUT INSERTED.[TokenId], INSERTED.[IsRevoked]
+VALUES (@p0, @p1, @p2, @p3);
+2026-07-30 16:03:56.393 +05:30 [INF] Refresh token saved for User 5
+2026-07-30 16:03:56.396 +05:30 [INF] User 5 logged in.
+2026-07-30 16:03:56.399 +05:30 [INF] Executing OkObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Authentication.AuthResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-30 16:03:56.405 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend) in 394.8626ms
+2026-07-30 16:03:56.408 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.AuthController.Login (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:03:56.411 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 413.7125 ms
+2026-07-30 16:03:56.417 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/auth/login - 200 null application/json; charset=utf-8 429.2101ms
+2026-07-30 16:04:06.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/api/profile - null null
+2026-07-30 16:04:06.095 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.GetProfile (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:04:06.104 +05:30 [INF] Route matched with {action = "GetProfile", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProfile() on controller P14_AI_Blog_Generator_Backend.Controllers.ProfileController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:04:06.123 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0 AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-07-30 16:04:06.132 +05:30 [INF] Profile retrieved for UserId 5
+2026-07-30 16:04:06.134 +05:30 [INF] Executing OkObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Profile.UserProfileDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-30 16:04:06.145 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.ProfileController.GetProfile (P14_AI_Blog_Generator_Backend) in 32.0623ms
+2026-07-30 16:04:06.149 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.GetProfile (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:04:06.152 +05:30 [INF] HTTP GET /api/profile responded 200 in 59.7722 ms
+2026-07-30 16:04:06.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/api/profile - 200 null application/json; charset=utf-8 80.878ms
+2026-07-30 16:04:14.169 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - multipart/form-data; boundary=--------------------------482689253710007854241626 104703
+2026-07-30 16:04:14.187 +05:30 [INF] Executing endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:04:14.190 +05:30 [INF] Route matched with {action = "UploadPicture", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPicture(Microsoft.AspNetCore.Http.IFormFile) on controller P14_AI_Blog_Generator_Backend.Controllers.ProfileController (P14_AI_Blog_Generator_Backend).
+2026-07-30 16:04:14.205 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AvailableCredits], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[ProfilePictureUrl], [u].[Role], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0 AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-07-30 16:04:14.244 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [ProfilePictureUrl] = @p0, [UpdatedAt] = @p1
+OUTPUT 1
+WHERE [UserId] = @p2;
+2026-07-30 16:04:14.258 +05:30 [INF] Profile picture uploaded for UserId 5
+2026-07-30 16:04:14.262 +05:30 [INF] Executing OkObjectResult, writing value of type 'P14_AI_Blog_Generator_Backend.ApiResponse.ApiResponse`1[[P14_AI_Blog_Generator_Backend.DTOs.Profile.UploadProfilePictureResponseDto, P14_AI_Blog_Generator_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-30 16:04:14.269 +05:30 [INF] Executed action P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend) in 71.7508ms
+2026-07-30 16:04:14.273 +05:30 [INF] Executed endpoint 'P14_AI_Blog_Generator_Backend.Controllers.ProfileController.UploadPicture (P14_AI_Blog_Generator_Backend)'
+2026-07-30 16:04:14.276 +05:30 [INF] HTTP POST /api/profile/upload-picture responded 200 in 89.9751 ms
+2026-07-30 16:04:14.280 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5201/api/profile/upload-picture - 200 null application/json; charset=utf-8 111.5662ms
+2026-07-30 16:04:33.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png - null null
+2026-07-30 16:04:33.690 +05:30 [INF] HTTP GET /ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png responded 404 in 0.2991 ms
+2026-07-30 16:04:33.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png - 404 0 null 13.0875ms
+2026-07-30 16:04:33.706 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png, Response status code: 404
+2026-07-30 16:07:32.731 +05:30 [INF] User profile is available. Using 'C:\Users\RenoSoftwares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-30 16:07:32.805 +05:30 [INF] Now listening on: http://localhost:5201
+2026-07-30 16:07:32.808 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-30 16:07:32.810 +05:30 [INF] Hosting environment: Development
+2026-07-30 16:07:32.811 +05:30 [INF] Content root path: C:\Reno_Softwares\P14_AI_Blog_Generator\P14_AI_Blog_Generator_Backend
+2026-07-30 16:45:43.192 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png - null null
+2026-07-30 16:45:43.286 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-30 16:45:43.351 +05:30 [INF] HTTP GET /ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png responded 404 in 56.5745 ms
+2026-07-30 16:45:43.369 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png - 404 0 null 180.5436ms
+2026-07-30 16:45:43.384 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5201/ProfilePictures/88ebd18d-df01-42ca-bb3d-f351d106a5da.png, Response status code: 404
